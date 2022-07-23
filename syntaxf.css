@@ -1,6 +1,4 @@
-/*flex-basis; dziala jak min-width tylko m-w wymaga scrollowania*/
-/*flex-basis się kurczy*/
-
+/*flex shorthand*/
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -23,20 +21,17 @@ body{
 
 .box{
     height: 100px;
-    flex-grow: 1;
+    flex: 1 0 100px;
 }
 
 .one{
     background: red;
-    flex-basis: 100px;
 }
 
 .two{
     background: blue;
-    flex-basis: 200px;
 }
 
 .three{
     background: green;
-    flex-basis: 300px;
 }
