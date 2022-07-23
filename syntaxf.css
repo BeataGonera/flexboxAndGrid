@@ -1,5 +1,5 @@
-/*flex-wrap*/
-
+/*flex-basis; dziala jak min-width tylko m-w wymaga scrollowania*/
+/*flex-basis się kurczy*/
 
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -18,23 +18,25 @@ body{
 .flex-container{
     display: flex;
     background: #fff;
-    flex-wrap: wrap-reverse; /*goes above and takes all the available space*/
+    flex-wrap: wrap;
 }
 
 .box{
     height: 100px;
-    min-width: 200px;
-    flex-grow:1;
+    flex-grow: 1;
 }
 
 .one{
     background: red;
+    flex-basis: 100px;
 }
 
 .two{
     background: blue;
+    flex-basis: 200px;
 }
 
 .three{
     background: green;
+    flex-basis: 300px;
 }
