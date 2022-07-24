@@ -30,12 +30,43 @@ nav a{
     text-decoration: none;
     text-align: center;
     color: #fff;
-    padding: 14px;
+    padding: 10px;
+    display: block;
 }
 
 nav a:hover{
     background-color: #555;
 }
+
+a.tw{
+    background: url(./download.png) no-repeat center;
+    background-size: 80%;
+}
+
+a.fb{
+    background: url(./fb.png) no-repeat center;
+    background-size: 80%;
+}
+
+.social{
+    max-width: 80px;
+    margin: 0 auto;
+}
+
+.social a{
+    text-indent:-10000px;
+}
+
+nav ul.social{
+    flex: 1 1 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul.social li{
+    flex: 1 1 0;
+}
+
 
 /*flex styles*/
 /*for bigger screens*/
@@ -46,10 +77,19 @@ nav a:hover{
         justify-content: flex-start;
     }
 
-}
+
 
     nav li{
         flex: 1 1 0;
 
 } 
 
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social{
+    margin: 0;
+}
+}
