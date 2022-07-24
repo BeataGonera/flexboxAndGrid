@@ -1,0 +1,36 @@
+body{
+    background-color: grey;
+}
+
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: flex-end; 
+    background: white;
+    height: 800px;
+}
+
+.box{
+    height: 100px;
+    flex: 0 0 200px; /*when column 100ox is a hight*/
+}
+
+.one{
+    background: red;
+}
+
+.two{
+    background: blue;
+}
+
+.three{
+    background: green;
+}
