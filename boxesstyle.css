@@ -1,3 +1,5 @@
+/*cross axis*/
+
 body{
     background-color: grey;
 }
@@ -13,14 +15,15 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-flow: column;
-    justify-content: flex-end; 
     background: white;
-    height: 800px;
+    height: 600px;
+    align-items: center;
 }
 
 .box{
     height: 100px;
-    flex: 0 0 200px; /*when column 100ox is a hight*/
+    width: 100px;
+    flex: 0 0 100px; /*when column 100ox is a hight*/
 }
 
 .one{
