@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="gridvsstack.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <title>Grid vs Stack</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <ul class="social">
+                <li><a href="#" class="fb">Facebook</a></li>
+                <li><a href="#" class="tw">Twitter</a></li>
+            </ul>
+
+        </nav>
+
+        <div>
+            <span>Layout:</span>
+            <a href="#" class="stack">Stack</a>
+            <a href="#" class="grid">Grid</a>
+
+        </div>
+        <section id="blocks">
+            <article>
+                <h2>I pity the fool</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis ipsa fugit natus
+                    labore temporibus obcaecati. Rem nihil cumque voluptatem, dignissimos sint eveniet adipisci
+                    exercitationem, ipsum sequi atque impedit vero!</p>
+            </article>
+
+            <article>
+                <h2>Get to the chopper</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis ipsa fugit natus
+                    labore temporibus obcaecati. Rem nihil cumque voluptatem, dignissimos sint eveniet adipisci
+                    exercitationem, ipsum sequi atque impedit vero!</p>
+            </article>
+
+            <article>
+                <h2>Tra la la</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis ipsa fugit natus
+                    labore temporibus obcaecati. Rem nihil cumque voluptatem, dignissimos sint eveniet adipisci
+                    exercitationem, ipsum sequi atque impedit vero!</p>
+            </article>
+
+            <article>
+                <h2>ze sie nie myle</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis ipsa fugit natus
+                    labore temporibus obcaecati. Rem nihil cumque voluptatem, dignissimos sint eveniet adipisci
+                    exercitationem, ipsum sequi atque impedit vero!</p>
+            </article>
+
+            <article>
+                <h2>nie kiwnalem nawet palcem</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis ipsa fugit natus
+                    labore temporibus obcaecati. Rem nihil cumque voluptatem, dignissimos sint eveniet adipisci
+                    exercitationem, ipsum sequi atque impedit vero!</p>
+            </article>
+            
+            <article>
+                <h2>by sie znalezc w takiej bajce</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis ipsa fugit natus
+                    labore temporibus obcaecati. Rem nihil cumque voluptatem, dignissimos sint eveniet adipisci
+                    exercitationem, ipsum sequi atque impedit vero!</p>
+            </article>
+        </section>
+    </div>
+
+
+</body>
+
+<script>
+
+    $("a.stack").on("click", function(){
+        $("article").addClass("stack")
+        });
+
+        $("a.grid").on("click", function(){
+        $("article").removeClass("stack")
+        });
+
+            
+</script>
+
+</html>
